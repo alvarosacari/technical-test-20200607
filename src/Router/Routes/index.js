@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import NotFound from '../../NotFound';
 import Home from '../../Home';
 import Movies from '../../Movies';
@@ -7,7 +7,9 @@ import Movies from '../../Movies';
 function Routes() {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Home}>
+        <Redirect to="/movies" />
+      </Route>
       <Route exact path="/movies" component={Movies} />
 
       {/* no match routes */}
