@@ -1,3 +1,5 @@
+![demo.gif](https://raw.githubusercontent.com/alvarosacari/technical-test-20200607/master/public/technical-test-20200607_demo.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
