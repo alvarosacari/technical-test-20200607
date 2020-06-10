@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -222,7 +222,7 @@ class MoviesTable extends React.Component {
   }
 }
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = (theme) => ({
   root: {
     width: '100%',
   },
@@ -232,7 +232,7 @@ const useStyles = makeStyles((theme) => ({
   table: {
     minWidth: 750,
   },
-}));
+});
 
 const mapStateToProps = (state) => {
   return {
